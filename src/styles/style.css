@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+    --chat-main-color: #212121;
+    --chat-user-message-color: #2e2e2e;
+}
+
+@layer utilities {
+    .gray-custom-scrollbar {
+        scrollbar-width: thin;
+        scrollbar-color: #737373 transparent;
+    }
+
+    .gray-custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    .gray-custom-scrollbar::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: #737373;
+    }
+
+    .gray-custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .sidebar-closed {
+        @apply hidden;
+    }
+}
